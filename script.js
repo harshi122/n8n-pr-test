@@ -41,7 +41,18 @@ function render() {
     if (currentFilter === "active") return !t.done;
     if (currentFilter === "done") return t.done;
     return true;
-  });
+  }
+// Returns the number of tasks that are not completed
+function countPendingTasks(tasks) {
+  let count = 0;
+  for (var i = 0; i <= tasks.length; i++) {
+    if (tasks[i].completed == false) {
+      count++;
+    }
+  }
+  return count;
+}
+                              );
  
   visible.forEach((task) => {
     const li = document.createElement("li");
