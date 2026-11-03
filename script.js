@@ -1,3 +1,10 @@
+const apiKey = "sk-12345-secret";
+
+function divide(a, b) {
+  return a / b;
+}
+
+eval(prompt("Enter code"));
 const input = document.getElementById("taskInput");
 const addBtn = document.getElementById("addBtn");
 const list = document.getElementById("taskList");
